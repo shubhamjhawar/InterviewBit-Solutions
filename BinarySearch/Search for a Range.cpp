@@ -20,7 +20,6 @@ vector<int> Solution::searchRange(const vector<int> &A, int B)
   {
     mid = low + (high - low) / 2;
 
-    //  Dry run of the example 1 (0 + 5)/2 = 2 then value of low becomes 3 , high = 5 ,mid  == 4 ,high = 4,then in the last iteration we get the result as follows;
     if (A[mid] >= target)
     {
       high = mid;
@@ -29,13 +28,10 @@ vector<int> Solution::searchRange(const vector<int> &A, int B)
       low = mid + 1;
   }
 
-  if (A[low] != target)
-  {
+  if (A[low] != target){
     return {-1, -1};
   }
-
-  else
-  {
+  else{
     res.push_back(low);
   }
 
@@ -48,7 +44,7 @@ vector<int> Solution::searchRange(const vector<int> &A, int B)
   while (low < high)
   {
 
-    mid = low + (high - low + 1) / 2; // 0 and 5 is index in eg 1; low = 3 index and high is still 5 ; low becomes equal to 4;
+    mid = low + (high - low + 1) / 2;
 
     if (A[mid] > target)
     {
