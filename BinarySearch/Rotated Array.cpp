@@ -27,4 +27,5 @@ int Solution::findMin(const vector<int> &A)
     return A[low];
   else
     return A[0];
+    
 }
