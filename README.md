@@ -1,4 +1,4 @@
 # InterviewBit-Solutions
 
 
-This Contains the solutions of the INterviewBit Programming track
+This Contains the solutions of the InterviewBit Programming track
